@@ -151,3 +151,101 @@
     background-size: cover;
     background-position: center;
 }
+
+/* CONTACT */
+
+.background {
+    background: #313840;
+    height: 100vh;
+}
+
+.contact-section{
+    background: #313840;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .inner-width{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 20px;
+    padding-top: 100px;
+  }
+  
+  .contact-section h1{
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  
+  .name,.email,.message{
+    background: none;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: #888;
+    padding: 10px 6px;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  
+  .name{
+    float: left;
+    width: 270px;
+  }
+  
+  .email{
+    float: right;
+    width: 270px;
+  }
+  
+  .message{
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  /* TODO REPAIR BUTTON!!! */
+  
+  .inner-width button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.inner-width span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.inner-width button:hover span {
+    width: 100%;
+}
+
+.inner-width button:hover {
+    border: none;
+}
+@media screen and (max-width:600px){
+    .name,.email{
+      width: 100%;
+    }
+  }
+  
