@@ -225,3 +225,51 @@
 
 /* PROJECTS */
 
+.slideshow {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px;
+    margin-left: 340px;
+}
+
+.slideshow-item {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    opacity: 0;
+    animation: cycleImages 40s infinite;
+}
+
+.slideshow-item:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideshow-item:nth-child(2) {
+    animation-delay: 10s;
+}
+
+.slideshow-item:nth-child(3) {
+    animation-delay: 20s;
+}
+
+.slideshow-item:nth-child(4) {
+    animation-delay: 30s;
+}
+
+.slideshow-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes cycleImages {
+    25%{
+        opacity: 1;
+    }
+
+    40%{
+        opacity: 0;
+    }
+}
