@@ -209,7 +209,7 @@
   
   /* TODO REPAIR BUTTON!!! */
   
-  .inner-width button {
+  .contact-section button {
     width: 200px;
     padding: 15px 0;
     text-align: center;
@@ -224,28 +224,4 @@
     overflow: hidden;
 }
 
-.inner-width span {
-    background: #009688;
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-}
-
-.inner-width button:hover span {
-    width: 100%;
-}
-
-.inner-width button:hover {
-    border: none;
-}
-@media screen and (max-width:600px){
-    .name,.email{
-      width: 100%;
-    }
-  }
   
